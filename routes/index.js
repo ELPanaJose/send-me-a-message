@@ -5,12 +5,12 @@ const authToken = ""
 const client = require('twilio')(accountSid, authToken);
 
 router.post('/message-sent',(req, res)=>{
-const { message } = req.body;
+const { message, name } = req.body;
 client.messages
   .create({
-     body: `${message}` ,
-     from: 'YOUR TWILIO NUMBER',
-     to: 'YOUR NUMBER'
+     body: `name: ${name}, message: ${message}` ,
+     from: 'Your twilio number',
+     to: 'your number'
    })
   .then(message => console.log(message.sid));
 res.redirect('/success.html');});

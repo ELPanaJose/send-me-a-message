@@ -1,0 +1,20 @@
+{
+  "name": "sendmeamessage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alert": "^5.0.10",
+    "express": "^4.17.1",
+    "twilio": "^3.58.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

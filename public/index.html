@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send Me A Message</title>
+    <link
+      rel="shortcut icon"
+      href="https://media.discordapp.net/attachments/820472030474272769/822650274115616778/061abb8d9c5075eafa86646bec7f9439.png?width=482&height=473"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous" 
+    />
+    <style>
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="card">
+            <div class="card-body">
+              <form action="/message-sent" method="POST">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="message"
+                    class="form-control"
+                    placeholder="message"
+                    autofocus
+                  />
+                </div>
+                <button class="btn btn-primary btn-block">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      src="https://media.discordapp.net/attachments/820472030474272769/822650274115616778/061abb8d9c5075eafa86646bec7f9439.png?width=482&height=473"
+      class="center"
+    />
+  </body>
+</html>
